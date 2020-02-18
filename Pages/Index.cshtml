@@ -5,6 +5,8 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3 class="display-4">Demo connexion à un compte de stockage Azure</h3>
+    <p>
+        @foreach(var imgname in Model.Images){<img src="@imgname.Url" alt="@imgname.Name"/><br>}
+    </p>
 </div>
